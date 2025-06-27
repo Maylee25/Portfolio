@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio de Maylee Rudler</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #222;
+    overflow-x: hidden;
+  }
+  header {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+    overflow: visible;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    animation: slideInDown 1.2s ease forwards;
+    opacity: 0;
+  }
+  header p {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+  }
+  .container {
+    max-width: 900px;
+    margin: -4rem auto 3rem;
+    padding: 2rem 2rem 4rem;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(101, 41, 255, 0.15);
+    position: relative;
+    z-index: 10;
+  }
+  section {
+    margin-bottom: 3.5rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+    border-left: 6px solid transparent;
+    padding-left: 1rem;
+  }
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+    border-left-color: #6a11cb;
+  }
+  h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    color: #6a11cb;
+    position: relative;
+    font-weight: 700;
+  }
+  h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 60px;
+    height: 6px;
+    background: #ff6a00;
+    border-radius: 4px;
+  }
+  p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: #444;
+  }
+  footer {
+    background: #6a11cb;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+  /* Animations */
+  @keyframes slideInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  /* Accent emojis in titles */
+  h2::before {
+    content: attr(data-emoji);
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Maylee Rudler</h1>
+  <p>Exploration scientifique & passion animale</p>
+</header>
+
+<div class="container">
+
+  <section data-emoji="✨">
+    <h2>Présentation</h2>
+    <p>Je suis <strong>Maylee Rudler</strong>, élève de seconde générale au <strong>lycée du Haut-Barr</strong> à Saverne. Ce portfolio a été conçu dans le cadre d’un <strong>stage</strong> pour mieux me présenter et partager mes passions et projets.</p>
+  </section>
+
+  <section data-emoji="📘">
+    <h2>Mon Parcours Scolaire</h2>
+    <p>Mes matières préférées sont la <strong>SVT</strong> et <strong>l’espagnol</strong>, car j’adore les <em>sciences</em> et découvrir de nouvelles cultures. La <strong>physique-chimie</strong> me semble plus difficile, mais je m’accroche car j’aime comprendre comment le monde fonctionne.</p>
+  </section>
+
+  <section data-emoji="💡">
+    <h2>Mes Qualités</h2>
+    <p>Je suis une personne <strong>créative</strong> qui aime <strong>travailler en groupe</strong>. Même si je suis un peu stressée à l’oral, je sais m’exprimer avec clarté. Mes points forts sont les <strong>langues étrangères</strong> et la <strong>curiosité</strong>.</p>
+  </section>
+
+  <section data-emoji="🖥️">
+    <h2>Mes Compétences</h2>
+    <p>J’ai de bonnes bases en <strong>informatique</strong>. Je maîtrise <strong>Canva</strong> et je suis capable de créer des présentations visuelles et bien organisées.</p>
+  </section>
+
+  <section data-emoji="🔬">
+    <h2>Projets Scolaires</h2>
+    <p>Les <strong>activités scientifiques en groupe</strong> ont été mes préférées cette année. Elles m’ont permis de collaborer, d’expérimenter et d’apprendre de manière concrète.</p>
+  </section>
+
+  <section data-emoji="🎯">
+    <h2>Centres d’intérêt</h2>
+    <p>En dehors des cours, j’aime me reposer ou faire mes devoirs. Je suis passionnée par la <strong>Formule 1</strong> 🏎️ et les <strong>animaux</strong> 🐾. Mon film préféré est <strong>Gran Turismo</strong>, un film inspirant et motivant.</p>
+  </section>
+
+  <section data-emoji="🚀">
+    <h2>Projet d’Avenir</h2>
+    <p>Je me vois travailler avec les animaux. Je souhaite devenir soit <strong>vétérinaire pour animaux sauvages</strong>, soit <strong>ostéopathe pour animaux</strong>. En première, j’ai choisi les spécialités <strong>maths</strong>, <strong>physique-chimie</strong> et <strong>SVT</strong> pour avancer dans cette voie scientifique.</p>
+  </section>
+
+  <section data-emoji="📝">
+    <h2>Conclusion</h2>
+    <p>Mon année de seconde m’a permis de me découvrir davantage et de confirmer mon intérêt pour les <strong>sciences</strong> et les <strong>animaux</strong>. Je suis motivée pour la suite de mon parcours !</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Maylee Rudler – Portfolio créatif et animé
+</footer>
+
+<script>
+  // Animation on scroll - reveal sections
+  const sections = document.querySelectorAll('section');
+  const revealSection = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', revealSection);
+  window.addEventListener('load', revealSection);
+</script>
+
+</body>
+</html>
